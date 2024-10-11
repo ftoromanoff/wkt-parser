@@ -19,7 +19,7 @@ function d2r(input) {
   return input * D2R;
 }
 
-function cleanWKT(wkt) {
+export function cleanWKT(wkt) {
   if (wkt.type === 'GEOGCS') {
     wkt.projName = 'longlat';
   } else if (wkt.type === 'LOCAL_CS') {
